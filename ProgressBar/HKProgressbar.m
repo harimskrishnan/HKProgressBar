@@ -15,9 +15,11 @@
 
 @synthesize barBackgroundColor, delegate, progress, complete;
 
+@synthesize patternImageForBar, patternImageForBarBackground;
+
 - (void)baseInit 
 {
-   
+    
     self.barColor = [UIColor colorWithRed:.1f  green:.55f blue:0.90f alpha:1];
     self.barBackgroundColor = [UIColor colorWithRed:.05f  green:0.11f blue:.46f alpha:1];
     self.backgroundColor = [UIColor clearColor];
@@ -29,7 +31,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-         self.frame = frame;
+        self.frame = frame;
         [self baseInit];
         [self setNeedsDisplay];
     }
@@ -49,39 +51,75 @@
     return complete;
 }
 
+-(UIImage *)patterenedImageWithImage:(UIImage *)image andPattern:(UIImage *)pattern
+{
+    
+    CGSize newSize = pattern.size;
+    UIGraphicsBeginImageContext( newSize );
+    
+    // Use existing opacity as is
+    [image drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+    // Apply supplied opacity
+    [pattern drawInRect:CGRectMake(0,0,newSize.width,newSize.height) blendMode:kCGBlendModeOverlay alpha:1];
+    
+    UIImage *patternedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return patternedImage;
+}
+
 -(void)drawRect:(CGRect)rect
 {
     UIImage *barImage;
     UIImage *backgroundImage;
-
     barImage = [self imageWithGradientFromColor:[barColor colorWithAlphaComponent:.7] toColor:barColor];
-    backgroundImage = [self imageWithGradientFromColor:[barBackgroundColor colorWithAlphaComponent:.7] toColor:barBackgroundColor];
+    backgroundImage = [self imageWithGradientFromColor:[barBackgroundColor colorWithAlphaComponent:.6] toColor:barBackgroundColor];
     
    
-        
-    UIImageView *backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+    
+    
+    
+    UIImageView *backgroundImageView = [[UIImageView alloc] initWithFrame:self.bounds];
     [self addSubview:backgroundImageView];
     
     backgroundImageView.backgroundColor = [UIColor clearColor];
     [backgroundImageView.layer setCornerRadius:10.0f];
     [backgroundImageView.layer setMasksToBounds:YES];
-    [backgroundImageView setImage:backgroundImage];
+    [backgroundImageView.layer setBorderColor:[barBackgroundColor CGColor]];
+    [backgroundImageView.layer setBorderWidth:3];
+    
+    if (patternImageForBarBackground) 
+    {
+        backgroundImage = [self patterenedImageWithImage:backgroundImage andPattern:patternImageForBarBackground];
+        UIColor *patternColor = [UIColor colorWithPatternImage:backgroundImage];
+        backgroundImageView.backgroundColor = patternColor;
+    }
+    else [backgroundImageView setImage:backgroundImage];
+
+    
     
     progressBarView = [[UIImageView alloc] initWithFrame:CGRectMake(3, 3, barLength, self.frame.size.height - 6)];
     [self addSubview:progressBarView];
     
     progressBarView.backgroundColor = [UIColor clearColor];
-    [progressBarView.layer setCornerRadius:10.0f];
+    [progressBarView.layer setCornerRadius:8.0f];
     [progressBarView.layer setMasksToBounds:YES];
-    [progressBarView setImage:barImage];
-
+    if (patternImageForBar)
+    {
+        barImage = [self patterenedImageWithImage:barImage andPattern:patternImageForBar];
+        UIColor *patternColor = [UIColor colorWithPatternImage:barImage];
+        progressBarView.backgroundColor = patternColor; 
+    }
+    else [progressBarView setImage:barImage];
     
+        
     percentage = [[UILabel alloc]initWithFrame:CGRectMake(self.frame.size.width - 80, 5, 70, self.frame.size.height-10) ];
     [self addSubview:percentage];
     percentage.backgroundColor = [UIColor clearColor];
     percentage.textColor =[UIColor whiteColor];
+    percentage.shadowColor = [UIColor darkGrayColor];
     percentage.textAlignment = UITextAlignmentCenter;
-   
+    
 }
 
 -(void)setProgressLevel:(NSNumber *)level

@@ -26,6 +26,7 @@
     
     progressBar.barColor = [UIColor redColor];
     progressBar.barBackgroundColor = [UIColor purpleColor];
+    progressBar.patternImageForBar = [UIImage imageNamed:@"pattern.png"];
     [self.progressBar setProgressLevel:[NSNumber numberWithInt:0]];
     
     [self performSelector:@selector(incrementBar) withObject:nil afterDelay:.5];

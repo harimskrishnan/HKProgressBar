@@ -22,6 +22,7 @@
 		42748AB614CD6C4C00871AAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42748AB414CD6C4C00871AAC /* InfoPlist.strings */; };
 		42748AB914CD6C4C00871AAC /* ProgressBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42748AB814CD6C4C00871AAC /* ProgressBarTests.m */; };
 		42748AC514CD6C7A00871AAC /* HKProgressbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 42748AC414CD6C7A00871AAC /* HKProgressbar.m */; };
+		42A3B26B14CD7FD90083575B /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A3B26A14CD7FD90083575B /* pattern.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +56,9 @@
 		42748AB514CD6C4C00871AAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42748AB714CD6C4C00871AAC /* ProgressBarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressBarTests.h; sourceTree = "<group>"; };
 		42748AB814CD6C4C00871AAC /* ProgressBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressBarTests.m; sourceTree = "<group>"; };
-		42748AC314CD6C7A00871AAC /* HKProgressbar.h */ = {isa = PBXFileReference; fileEncoding = 4; path = HKProgressbar.h; sourceTree = "<group>"; };
+		42748AC314CD6C7A00871AAC /* HKProgressbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKProgressbar.h; sourceTree = "<group>"; };
 		42748AC414CD6C7A00871AAC /* HKProgressbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKProgressbar.m; sourceTree = "<group>"; };
+		42A3B26A14CD7FD90083575B /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		42748A9114CD6C4B00871AAC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42A3B26A14CD7FD90083575B /* pattern.png */,
 				42748A9214CD6C4B00871AAC /* ProgressBar-Info.plist */,
 				42748A9314CD6C4B00871AAC /* InfoPlist.strings */,
 				42748A9614CD6C4B00871AAC /* main.m */,
@@ -240,6 +243,7 @@
 				42748A9514CD6C4B00871AAC /* InfoPlist.strings in Resources */,
 				42748AA114CD6C4B00871AAC /* HKViewController_iPhone.xib in Resources */,
 				42748AA414CD6C4B00871AAC /* HKViewController_iPad.xib in Resources */,
+				42A3B26B14CD7FD90083575B /* pattern.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

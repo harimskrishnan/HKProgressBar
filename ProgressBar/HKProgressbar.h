@@ -14,6 +14,8 @@
 {
     UIColor *barColor;
     UIColor *barBackgroundColor;
+    UIImage *patternImageForBar;
+    UIImage *patternImageForBarBackground;
     NSNumber *progress;
     id<HKProgressbarDelegate> delegate;
     
@@ -28,6 +30,8 @@
 @property(nonatomic, retain) id<HKProgressbarDelegate> delegate;
 @property(nonatomic, retain) NSNumber *progress;
 @property(nonatomic,assign,getter = isComplete) BOOL complete;
+@property(nonatomic,retain) UIImage *patternImageForBar;
+@property(nonatomic,retain) UIImage *patternImageForBarBackground;
 
 -(id)initWithFrame:(CGRect)frame;
 -(void)setProgressLevel:(NSNumber *)level;
