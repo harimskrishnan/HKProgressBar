@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42748A8B14CD6C4B00871AAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42748A8A14CD6C4B00871AAC /* UIKit.framework */; };
+		42748A8D14CD6C4B00871AAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42748A8C14CD6C4B00871AAC /* Foundation.framework */; };
+		42748A8F14CD6C4B00871AAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42748A8E14CD6C4B00871AAC /* CoreGraphics.framework */; };
+		42748A9514CD6C4B00871AAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42748A9314CD6C4B00871AAC /* InfoPlist.strings */; };
+		42748A9714CD6C4B00871AAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42748A9614CD6C4B00871AAC /* main.m */; };
+		42748A9B14CD6C4B00871AAC /* HKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42748A9A14CD6C4B00871AAC /* HKAppDelegate.m */; };
+		42748A9E14CD6C4B00871AAC /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42748A9D14CD6C4B00871AAC /* HKViewController.m */; };
+		42748AA114CD6C4B00871AAC /* HKViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42748A9F14CD6C4B00871AAC /* HKViewController_iPhone.xib */; };
+		42748AA414CD6C4B00871AAC /* HKViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42748AA214CD6C4B00871AAC /* HKViewController_iPad.xib */; };
+		42748AAC14CD6C4C00871AAC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42748AAB14CD6C4C00871AAC /* SenTestingKit.framework */; };
+		42748AAD14CD6C4C00871AAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42748A8A14CD6C4B00871AAC /* UIKit.framework */; };
+		42748AAE14CD6C4C00871AAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42748A8C14CD6C4B00871AAC /* Foundation.framework */; };
+		42748AB614CD6C4C00871AAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42748AB414CD6C4C00871AAC /* InfoPlist.strings */; };
+		42748AB914CD6C4C00871AAC /* ProgressBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42748AB814CD6C4C00871AAC /* ProgressBarTests.m */; };
+		42748AC514CD6C7A00871AAC /* HKProgressbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 42748AC414CD6C7A00871AAC /* HKProgressbar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42748AAF14CD6C4C00871AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42748A7D14CD6C4B00871AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42748A8514CD6C4B00871AAC;
+			remoteInfo = ProgressBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42748A8614CD6C4B00871AAC /* ProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42748A8A14CD6C4B00871AAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42748A8C14CD6C4B00871AAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42748A8E14CD6C4B00871AAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42748A9214CD6C4B00871AAC /* ProgressBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProgressBar-Info.plist"; sourceTree = "<group>"; };
+		42748A9414CD6C4B00871AAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42748A9614CD6C4B00871AAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42748A9814CD6C4B00871AAC /* ProgressBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProgressBar-Prefix.pch"; sourceTree = "<group>"; };
+		42748A9914CD6C4B00871AAC /* HKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKAppDelegate.h; sourceTree = "<group>"; };
+		42748A9A14CD6C4B00871AAC /* HKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKAppDelegate.m; sourceTree = "<group>"; };
+		42748A9C14CD6C4B00871AAC /* HKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
+		42748A9D14CD6C4B00871AAC /* HKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
+		42748AA014CD6C4B00871AAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HKViewController_iPhone.xib; sourceTree = "<group>"; };
+		42748AA314CD6C4B00871AAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HKViewController_iPad.xib; sourceTree = "<group>"; };
+		42748AAA14CD6C4C00871AAC /* ProgressBarTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressBarTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42748AAB14CD6C4C00871AAC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		42748AB314CD6C4C00871AAC /* ProgressBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProgressBarTests-Info.plist"; sourceTree = "<group>"; };
+		42748AB514CD6C4C00871AAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42748AB714CD6C4C00871AAC /* ProgressBarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressBarTests.h; sourceTree = "<group>"; };
+		42748AB814CD6C4C00871AAC /* ProgressBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressBarTests.m; sourceTree = "<group>"; };
+		42748AC314CD6C7A00871AAC /* HKProgressbar.h */ = {isa = PBXFileReference; fileEncoding = 4; path = HKProgressbar.h; sourceTree = "<group>"; };
+		42748AC414CD6C7A00871AAC /* HKProgressbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKProgressbar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42748A8314CD6C4B00871AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42748A8B14CD6C4B00871AAC /* UIKit.framework in Frameworks */,
+				42748A8D14CD6C4B00871AAC /* Foundation.framework in Frameworks */,
+				42748A8F14CD6C4B00871AAC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42748AA614CD6C4C00871AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42748AAC14CD6C4C00871AAC /* SenTestingKit.framework in Frameworks */,
+				42748AAD14CD6C4C00871AAC /* UIKit.framework in Frameworks */,
+				42748AAE14CD6C4C00871AAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42748A7B14CD6C4B00871AAC = {
+			isa = PBXGroup;
+			children = (
+				42748A9014CD6C4B00871AAC /* ProgressBar */,
+				42748AB114CD6C4C00871AAC /* ProgressBarTests */,
+				42748A8914CD6C4B00871AAC /* Frameworks */,
+				42748A8714CD6C4B00871AAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42748A8714CD6C4B00871AAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42748A8614CD6C4B00871AAC /* ProgressBar.app */,
+				42748AAA14CD6C4C00871AAC /* ProgressBarTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42748A8914CD6C4B00871AAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42748A8A14CD6C4B00871AAC /* UIKit.framework */,
+				42748A8C14CD6C4B00871AAC /* Foundation.framework */,
+				42748A8E14CD6C4B00871AAC /* CoreGraphics.framework */,
+				42748AAB14CD6C4C00871AAC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42748A9014CD6C4B00871AAC /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				42748AC214CD6C6000871AAC /* HKProgressbarView */,
+				42748A9914CD6C4B00871AAC /* HKAppDelegate.h */,
+				42748A9A14CD6C4B00871AAC /* HKAppDelegate.m */,
+				42748A9C14CD6C4B00871AAC /* HKViewController.h */,
+				42748A9D14CD6C4B00871AAC /* HKViewController.m */,
+				42748A9F14CD6C4B00871AAC /* HKViewController_iPhone.xib */,
+				42748AA214CD6C4B00871AAC /* HKViewController_iPad.xib */,
+				42748A9114CD6C4B00871AAC /* Supporting Files */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
+		42748A9114CD6C4B00871AAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42748A9214CD6C4B00871AAC /* ProgressBar-Info.plist */,
+				42748A9314CD6C4B00871AAC /* InfoPlist.strings */,
+				42748A9614CD6C4B00871AAC /* main.m */,
+				42748A9814CD6C4B00871AAC /* ProgressBar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42748AB114CD6C4C00871AAC /* ProgressBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				42748AB714CD6C4C00871AAC /* ProgressBarTests.h */,
+				42748AB814CD6C4C00871AAC /* ProgressBarTests.m */,
+				42748AB214CD6C4C00871AAC /* Supporting Files */,
+			);
+			path = ProgressBarTests;
+			sourceTree = "<group>";
+		};
+		42748AB214CD6C4C00871AAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42748AB314CD6C4C00871AAC /* ProgressBarTests-Info.plist */,
+				42748AB414CD6C4C00871AAC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42748AC214CD6C6000871AAC /* HKProgressbarView */ = {
+			isa = PBXGroup;
+			children = (
+				42748AC314CD6C7A00871AAC /* HKProgressbar.h */,
+				42748AC414CD6C7A00871AAC /* HKProgressbar.m */,
+			);
+			name = HKProgressbarView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42748A8514CD6C4B00871AAC /* ProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42748ABC14CD6C4C00871AAC /* Build configuration list for PBXNativeTarget "ProgressBar" */;
+			buildPhases = (
+				42748A8214CD6C4B00871AAC /* Sources */,
+				42748A8314CD6C4B00871AAC /* Frameworks */,
+				42748A8414CD6C4B00871AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressBar;
+			productName = ProgressBar;
+			productReference = 42748A8614CD6C4B00871AAC /* ProgressBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42748AA914CD6C4C00871AAC /* ProgressBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42748ABF14CD6C4C00871AAC /* Build configuration list for PBXNativeTarget "ProgressBarTests" */;
+			buildPhases = (
+				42748AA514CD6C4C00871AAC /* Sources */,
+				42748AA614CD6C4C00871AAC /* Frameworks */,
+				42748AA714CD6C4C00871AAC /* Resources */,
+				42748AA814CD6C4C00871AAC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42748AB014CD6C4C00871AAC /* PBXTargetDependency */,
+			);
+			name = ProgressBarTests;
+			productName = ProgressBarTests;
+			productReference = 42748AAA14CD6C4C00871AAC /* ProgressBarTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42748A7D14CD6C4B00871AAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 42748A8014CD6C4B00871AAC /* Build configuration list for PBXProject "ProgressBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42748A7B14CD6C4B00871AAC;
+			productRefGroup = 42748A8714CD6C4B00871AAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42748A8514CD6C4B00871AAC /* ProgressBar */,
+				42748AA914CD6C4C00871AAC /* ProgressBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42748A8414CD6C4B00871AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42748A9514CD6C4B00871AAC /* InfoPlist.strings in Resources */,
+				42748AA114CD6C4B00871AAC /* HKViewController_iPhone.xib in Resources */,
+				42748AA414CD6C4B00871AAC /* HKViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42748AA714CD6C4C00871AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42748AB614CD6C4C00871AAC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42748AA814CD6C4C00871AAC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42748A8214CD6C4B00871AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42748A9714CD6C4B00871AAC /* main.m in Sources */,
+				42748A9B14CD6C4B00871AAC /* HKAppDelegate.m in Sources */,
+				42748A9E14CD6C4B00871AAC /* HKViewController.m in Sources */,
+				42748AC514CD6C7A00871AAC /* HKProgressbar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42748AA514CD6C4C00871AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42748AB914CD6C4C00871AAC /* ProgressBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42748AB014CD6C4C00871AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42748A8514CD6C4B00871AAC /* ProgressBar */;
+			targetProxy = 42748AAF14CD6C4C00871AAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42748A9314CD6C4B00871AAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42748A9414CD6C4B00871AAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42748A9F14CD6C4B00871AAC /* HKViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42748AA014CD6C4B00871AAC /* en */,
+			);
+			name = HKViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		42748AA214CD6C4B00871AAC /* HKViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42748AA314CD6C4B00871AAC /* en */,
+			);
+			name = HKViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		42748AB414CD6C4C00871AAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42748AB514CD6C4C00871AAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42748ABA14CD6C4C00871AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42748ABB14CD6C4C00871AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42748ABD14CD6C4C00871AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProgressBar/ProgressBar-Prefix.pch";
+				INFOPLIST_FILE = "ProgressBar/ProgressBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42748ABE14CD6C4C00871AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProgressBar/ProgressBar-Prefix.pch";
+				INFOPLIST_FILE = "ProgressBar/ProgressBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		42748AC014CD6C4C00871AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ProgressBar.app/ProgressBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProgressBar/ProgressBar-Prefix.pch";
+				INFOPLIST_FILE = "ProgressBarTests/ProgressBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		42748AC114CD6C4C00871AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ProgressBar.app/ProgressBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProgressBar/ProgressBar-Prefix.pch";
+				INFOPLIST_FILE = "ProgressBarTests/ProgressBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42748A8014CD6C4B00871AAC /* Build configuration list for PBXProject "ProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42748ABA14CD6C4C00871AAC /* Debug */,
+				42748ABB14CD6C4C00871AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42748ABC14CD6C4C00871AAC /* Build configuration list for PBXNativeTarget "ProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42748ABD14CD6C4C00871AAC /* Debug */,
+				42748ABE14CD6C4C00871AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42748ABF14CD6C4C00871AAC /* Build configuration list for PBXNativeTarget "ProgressBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42748AC014CD6C4C00871AAC /* Debug */,
+				42748AC114CD6C4C00871AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42748A7D14CD6C4B00871AAC /* Project object */;
+}
