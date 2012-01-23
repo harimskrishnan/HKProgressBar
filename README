@@ -1,1 +1,10 @@
-Project :- HKProgressbar
+Project :-      HKProgressbar
+
+Description :-  A replacement for iOS's default UIProgressView. 
+                Shows progress as text also.
+                Bar color and background color are customizable.
+                Can also add pattern image for bar as well as background
+
+Classes :-      HKProgressbar.h , HKProgressbar.m
+
+Example :-      Also included example xcode project.
